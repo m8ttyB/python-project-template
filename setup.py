@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 
 from setuptools import setup
-from pip.req import parse_requirements
-
-install_reqs = parse_requirements('requirements.txt')
-reqs = [str(ir.req) for ir in install_reqs]
 
 setup(
     name = 'dummy-project',
@@ -14,7 +10,7 @@ setup(
     author = 'Richard Pappalardo',
     author_email = 'rpappalax@gmail.com',
     url = 'https://github.com/rpappalax/dummy-project',
-    install_requires = reqs,
+    install_requires = [ 'Fabric' ],
     packages = [ 'dummyproj' ],
     entry_points={
         'console_scripts': [

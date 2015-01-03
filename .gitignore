@@ -1,6 +1,5 @@
 # Created by .gitignore support plugin (hsz.mobi)
 /.idea
-/build
 .sw[op]
 
 # Byte-compiled / optimized / DLL files
@@ -11,9 +10,7 @@ __pycache__/
 .Python
 env/
 build/
-develop-eggs/
 dist/
-eggs/
 sdist/
 *.egg-info/
 .installed.cfg

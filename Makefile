@@ -11,8 +11,7 @@ all:	build
 build: $(VENVDIR)/COMPLETE
 $(VENVDIR)/COMPLETE: requirements.txt
 	virtualenv --no-site-packages --python=`which python` --distribute $(VENVDIR)
-	$(INSTALL) --upgrade Distribute pip
-	#$(INSTALL) -r ./requirements.txt
+	$(INSTALL) -r ./requirements.txt
 	$(PYTHON) ./setup.py develop
 	touch $(VENVDIR)/COMPLETE
 
@@ -23,3 +22,4 @@ clean:
 .PHONY: clobber
 clobber: clean
 	rm -rf $(VENVDIR)
+	rm -rf *egg*
