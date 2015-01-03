@@ -1,0 +1,26 @@
+# Created by .gitignore support plugin (hsz.mobi)
+/.idea
+/build
+.sw[op]
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+eggs/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
