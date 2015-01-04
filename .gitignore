@@ -1,6 +1,6 @@
 # Created by .gitignore support plugin (hsz.mobi)
 /.idea
-.sw[op]
+*.sw[op]
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
