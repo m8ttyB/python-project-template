@@ -37,10 +37,10 @@ pypi:
 .PHONY: testpypi
 testpypi:
 	# Create dist, egg dirs, upload package to testpypi
-	$(PYTHON) setup.py sdist upload -r pypitest
+	$(PYTHON) setup.py sdist upload -r testpypi
 	# creating 'dist/dummy_project-0.0.3-py2.7.egg' and
 	#  adding 'build/bdist.macosx-10.9-intel/egg' to it
-	$(PYTHON) setup.py bdist_egg upload -r pypitest
+	$(PYTHON) setup.py bdist_egg upload -r testpypi
 
 .PHONY: pypi-register
 pypi-register:
