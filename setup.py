@@ -4,16 +4,14 @@ from setuptools import setup
 
 setup(
     name = 'dummy-project',
-    version = '0.0.3',
-    description = 'Python script that does absolutely nothing except \
-    to demonstrate setup.py.',
+    version = '0.0.1',
+    description = 'Python template project to demonstrate setup.py,'
+                  'with Makefile build and sample unittests.',
     author = 'Richard Pappalardo',
     author_email = 'rpappalax@gmail.com',
     url = 'https://github.com/rpappalax/dummy-project',
     license = "MIT",
-    install_requires = [ 'nose >= 1.3.4',
-                         'wsgiref==0.1.2',
-    ],
+    install_requires = [ 'nose >= 1.3.4' ],
     keywords = ['dummy', 'setup.py', 'project'],
     packages = [ 'dummyproj' ],
     classifiers=[

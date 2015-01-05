@@ -1,4 +1,5 @@
 dummy-project
 =============
 
-Dummy python project to illustrate setup.py
+Python dummy project to demonstrate setup.py, with Makefile build and 
+sample unittests.
