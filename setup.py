@@ -10,7 +10,10 @@ setup(
     author = 'Richard Pappalardo',
     author_email = 'rpappalax@gmail.com',
     url = 'https://github.com/rpappalax/dummy-project',
-    install_requires = [ 'Fabric' ],
+    license = "MIT",
+    install_requires = [ 'nose >= 1.3.4',
+                         'wsgiref==0.1.2',
+    ],
     keywords = ['dummy', 'setup.py', 'project'],
     packages = [ 'dummyproj' ],
     classifiers=[
@@ -26,5 +29,4 @@ setup(
             'dummyproj = dummyproj.dummy_handler:DummyHandler',
         ]
     },
-
 )
