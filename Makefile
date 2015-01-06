@@ -11,7 +11,6 @@ all:	build test
 build: $(VENVDIR)/COMPLETE
 $(VENVDIR)/COMPLETE: requirements.txt
 	virtualenv --no-site-packages --python=`which python` --distribute $(VENVDIR)
-	virtualenv ./build/venv
 	$(INSTALL) -r ./requirements.txt
 	$(PYTHON) ./setup.py develop
 	touch $(VENVDIR)/COMPLETE
@@ -19,6 +18,10 @@ $(VENVDIR)/COMPLETE: requirements.txt
 .PHONY: test
 test:
 	$(BINDIR)/nosetests
+
+.PHONY: run
+run:
+	$(BINDIR)/dummy
 
 .PHONY: clean
 clean:

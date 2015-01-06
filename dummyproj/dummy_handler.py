@@ -12,9 +12,13 @@ class DummyHandler(object):
     def get_some_bool(self):
         return True
 
+#
+def main():
+    dh = DummyHandler()
+    print dh.do_something()
+
 
 if __name__ == '__main__':
-
-    dummy = DummyHandler()
-    print dummy.do_nothing()
-    print dummy.do_something()
+    main()
+   # dummy = DummyHandler()
+   # print dummy.do_something()

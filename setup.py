@@ -23,8 +23,7 @@ setup(
         'Programming Language :: Python :: 3.3',
     ],
     entry_points={
-        'console_scripts': [
-            'dummyproj = dummyproj.dummy_handler:DummyHandler',
-        ]
+
+        'console_scripts': [ 'dummy = dummyproj.dummy_handler:main' ]
     },
 )
