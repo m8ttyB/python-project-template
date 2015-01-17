@@ -3,17 +3,17 @@
 from setuptools import setup
 
 setup(
-    name = 'dummy-project',
-    version = '0.0.1',
-    description = 'Python template project to demonstrate setup.py,'
+    name = 'python-project-template',
+    version = '0.0.3',
+    description = 'Python project template to demonstrate setup.py,'
                   'with Makefile build and sample unittests.',
     author = 'Richard Pappalardo',
     author_email = 'rpappalax@gmail.com',
-    url = 'https://github.com/rpappalax/dummy-project',
+    url = 'https://github.com/rpappalax/python-project-template',
     license = "MIT",
     install_requires = [ 'nose >= 1.3.4' ],
-    keywords = ['dummy', 'setup.py', 'project'],
-    packages = [ 'dummyproj' ],
+    keywords = ['demo', 'setup.py', 'project'],
+    packages = [ 'demo' ],
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
@@ -24,6 +24,6 @@ setup(
     ],
     entry_points={
 
-        'console_scripts': [ 'dummy = dummyproj.dummy_handler:main' ]
+        'console_scripts': [ 'demo = demo.dummy_handler:main' ]
     },
 )

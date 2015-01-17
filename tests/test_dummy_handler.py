@@ -1,5 +1,5 @@
 import unittest
-from dummyproj import DummyHandler
+from demo import DummyHandler
 
 d = DummyHandler()
 
