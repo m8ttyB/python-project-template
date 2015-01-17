@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name = 'python-project-template',
-    version = '0.0.3',
+    version = '0.0.5',
     description = 'Python project template to demonstrate setup.py,'
                   'with Makefile build and sample unittests.',
     author = 'Richard Pappalardo',

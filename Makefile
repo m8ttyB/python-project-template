@@ -4,8 +4,14 @@ PYTHON = $(BINDIR)/python
 PIP = $(BINDIR)/pip
 INSTALL = $(PIP) install
 
+
 .PHONY: all
 all:	build test
+
+.PHONY: help
+help:
+	@echo "run:"
+	@echo "$ ./build/venv/bin/demo"
 
 .PHONY: build
 build: $(VENVDIR)/COMPLETE
@@ -21,7 +27,7 @@ test:
 
 .PHONY: run
 run:
-	$(BINDIR)/dummy
+	$(BINDIR)/demo
 
 .PHONY: clean
 clean:
