@@ -1,10 +1,10 @@
 import unittest
-from demo import DummyHandler
+from demo import DemoHandler
 
-d = DummyHandler()
+d = DemoHandler()
 
-class DummyTestCase(unittest.TestCase):
-    """Tests for `dummy_handler.py`."""
+class DemoTestCase(unittest.TestCase):
+    """Tests for `demo_handler.py`."""
 
     def test_get_some_bool(self):
         """Does this function actually return True?"""

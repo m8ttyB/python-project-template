@@ -1,4 +1,8 @@
-class DummyHandler(object):
+"""Module for to demo python project
+"""
+
+class DemoHandler(object):
+    """Placeholder class"""
 
     def __init__(self):
         print "Hallo, Welt."
@@ -14,8 +18,8 @@ class DummyHandler(object):
 
 #
 def main():
-    dh = DummyHandler()
-    print dh.do_something()
+    demo = DemoHandler()
+    print demo.do_something()
 
 
 if __name__ == '__main__':

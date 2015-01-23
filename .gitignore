@@ -1,11 +1,7 @@
+.DS_Store
 /.idea
 *.sw[op]
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
 *.py[cod]
-
-# Distribution / packaging
 .Python
 env/
 build/
@@ -14,9 +10,4 @@ sdist/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Sphinx documentation
 docs/_build/
-
-# PyBuilder
-target/
