@@ -23,6 +23,6 @@ setup(
         'Programming Language :: Python :: 3.3',
     ],
     entry_points={
-        'console_scripts':['demo = demo.dummy_handler:main']
+        'console_scripts':['demo = demo.demo_handler:main']
     },
 )
