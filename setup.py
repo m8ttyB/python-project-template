@@ -11,7 +11,7 @@ setup(
     author_email='rpappalax@gmail.com',
     url='https://github.com/rpappalax/python-project-template',
     license="MIT",
-    install_requires=['nose >= 1.3.4'],
+    install_requires=['nose >= 1.3.4', 'tox >= 1.9.0'],
     keywords=['demo', 'setup.py', 'project'],
     packages=['demo'],
     classifiers=[
