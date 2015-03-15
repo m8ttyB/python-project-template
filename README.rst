@@ -4,9 +4,11 @@ python-project-template
 Python demo project using setup.py, tox, Makefile build and
 sample unittests.
 
-.. image:: https://travis-ci.org/rpappalax/python-project-template.svg?branch=dev
+.. image::  https://travis-ci.org/rpappalax/python-project-template.svg
 :target: https://travis-ci.org/rpappalax/python-project-template
 
+.. image:: https://badge.fury.io/py/python-project-template.svg
+:target: http://badge.fury.io/py/python-project-template
 
 Install
 -------
