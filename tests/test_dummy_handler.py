@@ -1,7 +1,8 @@
 import unittest
-from demo import DemoHandler
+from demo.demo_handler import DemoHandler
 
 d = DemoHandler()
+
 
 class DemoTestCase(unittest.TestCase):
     """Tests for `demo_handler.py`."""
@@ -20,4 +21,3 @@ class DemoTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
