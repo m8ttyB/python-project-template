@@ -13,6 +13,7 @@ Install
 -------
 
     .. code::  bash
+
     git clone https://github.com/rpappalax/python-project-template.git
     cd python-project-template
     python setup.py develop
@@ -20,7 +21,9 @@ Install
 
 Run
 -------
+
     .. code::  bash
+
     source ./build/venv/bin/activate
     demo
 
