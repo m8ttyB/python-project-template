@@ -34,11 +34,12 @@ test:
 run:
 	$(BINDIR)/demo
 
-.PHONY: clean ## Clean all build files
+.PHONY: clean ## Clean all build and pyc files
 clean:
 	rm -rf build
 	rm -rf *egg*
 	rm -rf dist
+	find . -name '*.pyc' -exec rm -f {} +
 
 # for development branch only
 

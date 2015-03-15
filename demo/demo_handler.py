@@ -1,6 +1,7 @@
 """Module for to demo python project
 """
 
+
 class DemoHandler(object):
     """Placeholder class"""
 
@@ -16,11 +17,13 @@ class DemoHandler(object):
     def get_some_bool(self):
         return True
 
-#
+
 def main():
+
     demo = DemoHandler()
     print demo.do_something()
 
 
 if __name__ == '__main__':
+
     main()

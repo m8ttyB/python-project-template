@@ -1,7 +1,7 @@
 python-project-template
 =======================
 
-Python demo project to demonstrate setup.py, with Makefile build and
+Python demo project using setup.py, tox, Makefile build and
 sample unittests.
 
 |travis|
@@ -15,6 +15,13 @@ Install
     git clone https://github.com/rpappalax/python-project-template.git
     cd python-project-template
     python setup.py develop
+    make build
+
+Run
+-------
+
+    source ./build/venv/bin/activate
+    demo
 
 Reference
 ---------

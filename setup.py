@@ -12,13 +12,15 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 REQUIREMENTS = [
     'nose >= 1.3.4',
-    'tox >= 1.9.0'
+    'tox >= 1.9.0',
+    'flake8==2.4.0'
 ]
 
 KEYWORDS = [
     'demo',
     'setup.py',
-    'project'
+    'project',
+    'tox'
 ]
 
 setup(
@@ -39,6 +41,6 @@ setup(
         'Programming Language :: Python :: 3.3',
     ],
     entry_points={
-        'console_scripts':['demo = demo.demo_handler:main']
+        'console_scripts': ['demo = demo.demo_handler:main']
     },
 )
