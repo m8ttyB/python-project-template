@@ -7,10 +7,10 @@ sample unittests.
 |travis| |pypi|
 
 .. |travis| image:: https://travis-ci.org/rpappalax/python-project-template.svg?branch=dev
-:target: https://travis-ci.org/rpappalax/python-project-template
+    :target: https://travis-ci.org/rpappalax/python-project-template
 
 .. |pypi| image:: https://badge.fury.io/py/python-project-template.svg
-:target: http://badge.fury.io/py/python-project-template
+    :target: http://badge.fury.io/py/python-project-template
 
 
 Install
