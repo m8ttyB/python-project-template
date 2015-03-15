@@ -7,12 +7,12 @@ sample unittests.
 |travis|
 
 .. |travis| image:: https://travis-ci.org/rpappalax/python-project-template.svg?branch=dev
-    :target: https://travis-ci.org/rpappalax/python-project-template
+:target: https://travis-ci.org/rpappalax/python-project-template
 
 Install
 -------
 
-    .. code::  bash
+::
 
     git clone https://github.com/rpappalax/python-project-template.git
     cd python-project-template
@@ -22,7 +22,7 @@ Install
 Run
 -------
 
-    .. code::  bash
+::
 
     source ./build/venv/bin/activate
     demo
