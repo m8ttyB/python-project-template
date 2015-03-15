@@ -8,6 +8,7 @@ SPHINX_BUILDDIR = docs/_build
 
 help:
 	@echo ""
+	@echo "========================================"
 	@echo "HELP"
 	@echo "========================================"
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'  |  \
@@ -40,6 +41,8 @@ clean:
 	rm -rf build
 	rm -rf *egg*
 	rm -rf dist
+	rm -rf ./docs/_build
+	rm -rf .tox
 	find . -name '*.pyc' -exec rm -f {} +
 
 .PHONY: docs ## Generate docs

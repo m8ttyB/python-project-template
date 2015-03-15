@@ -43,3 +43,5 @@ Reference
 - `<http://stackoverflow.com/questions/15724093/difference-between-python-setup-py-install-and-pip-install>`_
 - `<https://caremad.io/2013/07/setup-vs-requirement/>`_
 - `<http://stackoverflow.com/questions/1471994/what-is-setup-py>`_
+- `<https://tox.readthedocs.org/en/latest/>`_
+- `<https://travis-ci.org/>`_
