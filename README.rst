@@ -6,7 +6,7 @@ sample unittests.
 
 |travis|
 
-.. |travis| image:: https://travis-ci.org/rpappalax/python-project-template.svg?branch=master
+.. |travis| image:: https://travis-ci.org/rpappalax/python-project-template.svg?branch=dev
     :target: https://travis-ci.org/rpappalax/python-project-template
 
 Install

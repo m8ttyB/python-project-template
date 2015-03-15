@@ -25,7 +25,7 @@ KEYWORDS = [
 
 setup(
     name='python-project-template',
-    version='0.0.9',
+    version='0.1.0',
     description='python-project-template',
     long_description=README,
     author='Richard Pappalardo',

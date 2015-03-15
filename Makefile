@@ -4,6 +4,7 @@ PYTHON = $(BINDIR)/python
 PIP = $(BINDIR)/pip
 INSTALL = $(PIP) install
 MAKEFILE_LIST=Makefile
+SPHINX_BUILDDIR = docs/_build
 
 help:
 	@echo ""
@@ -40,6 +41,13 @@ clean:
 	rm -rf *egg*
 	rm -rf dist
 	find . -name '*.pyc' -exec rm -f {} +
+
+.PHONY: docs ## Generate docs
+docs:
+	$(VENVDIR)/bin/sphinx-build -b html -d $(SPHINX_BUILDDIR)/doctrees docs $(SPHINX_BUILDDIR)/html
+	@echo
+	@echo "Build finished. The HTML pages are in $(SPHINX_BUILDDIR)/html/index.html"
+
 
 # for development branch only
 
