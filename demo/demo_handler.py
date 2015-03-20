@@ -1,6 +1,6 @@
 """Module for to demo python project
 """
-
+import requests
 
 class DemoHandler(object):
     """Placeholder class"""
@@ -14,14 +14,21 @@ class DemoHandler(object):
     def do_something(self):
         return 'Ain\'t that something?'
 
-    def get_some_bool(self):
+    def some_bool(self):
         return True
+
+
+    def remote_data(self):
+        # import pdb; pdb.set_trace();
+        response = requests.get('http://httpbin.org/get')
+        return response.text
 
 
 def main():
 
     demo = DemoHandler()
     print(demo.do_something())
+    print(demo.remote_data())
 
 
 if __name__ == '__main__':

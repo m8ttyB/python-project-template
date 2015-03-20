@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-# from setuptools import setup
-
 import os
 from setuptools import setup, find_packages
 
@@ -11,6 +9,8 @@ with open(os.path.join(here, 'README.rst')) as f:
     README = f.read()
 
 REQUIREMENTS = [
+    'requests >= 2.6.0',
+    'mock >= 1.0.1',
     'nose >= 1.3.4',
     'tox >= 1.9.0',
     'flake8==2.4.0'
@@ -25,7 +25,7 @@ KEYWORDS = [
 
 setup(
     name='python-project-template',
-    version='0.1.2',
+    version='0.1.3',
     description='python-project-template',
     long_description=README,
     author='Richard Pappalardo',
