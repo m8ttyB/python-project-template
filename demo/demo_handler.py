@@ -2,6 +2,7 @@
 """
 import requests
 
+
 class DemoHandler(object):
     """Placeholder class"""
 
@@ -16,7 +17,6 @@ class DemoHandler(object):
 
     def some_bool(self):
         return True
-
 
     def remote_data(self):
         # import pdb; pdb.set_trace();

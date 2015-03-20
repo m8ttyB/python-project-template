@@ -3,6 +3,7 @@ import requests
 from mock import Mock, patch
 from demo.demo_handler import DemoHandler
 
+
 d = DemoHandler()
 
 
