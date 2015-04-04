@@ -9,23 +9,18 @@ with open(os.path.join(here, 'README.rst')) as f:
     README = f.read()
 
 REQUIREMENTS = [
-    'requests >= 2.6.0',
-    'mock >= 1.0.1',
-    'nose >= 1.3.4',
-    'tox >= 1.9.0',
-    'flake8==2.4.0'
-]
-
-KEYWORDS = [
-    'demo',
-    'setup.py',
-    'project',
-    'tox'
+    'requests>=2.6.0',
+    'mock>=1.0.1',
+    'nose>=1.3.4',
+    'tox>=1.9.0',
+    'flake8>=2.4.0',
+    'Sphinx>=1.3',
+    'sphinx_rtd_theme>=0.1.7',
 ]
 
 setup(
     name='python-project-template',
-    version='0.1.3',
+    version='0.1.4',
     description='python-project-template',
     long_description=README,
     author='Richard Pappalardo',
@@ -33,7 +28,7 @@ setup(
     url='https://github.com/rpappalax/python-project-template',
     license="MIT",
     install_requires=REQUIREMENTS,
-    keywords=KEYWORDS,
+    keywords=['demo', 'setup.py', 'project', 'tox'],
     packages=find_packages(),
     classifiers=[
         'Programming Language :: Python',
