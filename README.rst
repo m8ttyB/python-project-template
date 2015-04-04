@@ -7,7 +7,7 @@ Description
 Python demo project using setup.py, tox, Makefile build and
 sample unittests.
 
-|travis| |pypi|
+|travis| |pypi| |coverage|
 
 .. |travis| image:: https://travis-ci.org/rpappalax/python-project-template.svg?branch=dev
     :target: https://travis-ci.org/rpappalax/python-project-template
@@ -15,7 +15,7 @@ sample unittests.
 .. |pypi| image:: https://badge.fury.io/py/python-project-template.svg
     :target: http://badge.fury.io/py/python-project-template
 
-.. |coveralls| image:: https://coveralls.io/repos/rpappalax/python-project-template/badge.svg
+.. |coverage| image:: https://coveralls.io/repos/rpappalax/python-project-template/badge.svg
     :target: https://coveralls.io/r/rpappalax/python-project-template
 
 Install
