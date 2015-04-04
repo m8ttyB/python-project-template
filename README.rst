@@ -16,6 +16,8 @@ sample unittests.
 .. image:: https://coveralls.io/repos/rpappalax/python-project-template/badge.svg
     :target: https://coveralls.io/r/rpappalax/python-project-template
 
+
+
 Install
 -------
 
