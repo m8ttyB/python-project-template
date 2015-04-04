@@ -12,6 +12,8 @@ REQUIREMENTS = [
     'requests>=2.6.0',
     'mock>=1.0.1',
     'nose>=1.3.4',
+    'nose-cov',
+    'nose-mocha-reporter',
     'coverage',
     'tox>=1.9.0',
     'flake8>=2.4.0',

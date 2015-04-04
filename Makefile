@@ -14,11 +14,12 @@ build: $(VENVDIR)/COMPLETE
 $(VENVDIR)/COMPLETE: requirements.txt
 	virtualenv --no-site-packages --python=`which python` \
 	    --distribute $(VENVDIR)
-	$(INSTALL) -r ./requirements.txt
-	$(PYTHON) ./setup.py develop
+	$(INSTALL) -r requirements.txt
+	$(PYTHON) setup.py develop
 	touch $(VENVDIR)/COMPLETE
 
 test:
+	$(INSTALL) -r test-requirements.txt
 	tox
 
 run:

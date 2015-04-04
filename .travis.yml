@@ -13,4 +13,4 @@ script:
 notifications:
     irc: "irc.freenode.org#rpappalax"
 after_success:
-    - coveralls
+    coveralls
