@@ -2,14 +2,9 @@
 /.idea
 *.sw[op]
 .Python
-env/
-build/
-dist/
-sdist/
-.installed.cfg
-*.egg
+venv/
+*.egg*
 *.py[cod]
-*.egg-info
 *.stamp
 .venv/
 .coverage

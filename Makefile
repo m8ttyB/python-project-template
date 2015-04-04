@@ -1,4 +1,4 @@
-VENVDIR = ./build/venv
+VENVDIR = ./venv
 BINDIR = $(VENVDIR)/bin
 PYTHON = $(BINDIR)/python
 PIP = $(BINDIR)/pip
@@ -25,7 +25,7 @@ run:
 	$(BINDIR)/demo
 
 clean:
-	rm -rf build  *egg*  dist  ./docs/_build  .tox
+	rm -rf venv  *egg*  dist  ./docs/_build  .tox
 	find . -name '*.pyc' -exec rm -f {} +
 
 docs:
