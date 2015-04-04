@@ -15,6 +15,8 @@ sample unittests.
 .. |pypi| image:: https://badge.fury.io/py/python-project-template.svg
     :target: http://badge.fury.io/py/python-project-template
 
+.. |coveralls| image:: https://coveralls.io/repos/rpappalax/python-project-template/badge.svg
+    :target: https://coveralls.io/r/rpappalax/python-project-template
 
 Install
 -------
@@ -23,7 +25,6 @@ Install
 
     $ git clone https://github.com/rpappalax/python-project-template.git
     $ cd python-project-template
-    $ python setup.py develop
     $ make build
 
 Usage

@@ -12,6 +12,7 @@ REQUIREMENTS = [
     'requests>=2.6.0',
     'mock>=1.0.1',
     'nose>=1.3.4',
+    'coverage',
     'tox>=1.9.0',
     'flake8>=2.4.0',
     'Sphinx>=1.3',
@@ -20,7 +21,7 @@ REQUIREMENTS = [
 
 setup(
     name='python-project-template',
-    version='0.1.4',
+    version='0.1.5',
     description='python-project-template',
     long_description=README,
     author='Richard Pappalardo',
