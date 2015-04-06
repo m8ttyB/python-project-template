@@ -7,6 +7,7 @@ class DemoHandler(object):
     """Placeholder class"""
 
     def __init__(self):
+        print('access_token=XXXXX')
         print('Hallo, Welt.')
 
     def do_nothing(self):

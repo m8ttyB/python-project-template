@@ -1,36 +1,40 @@
-VENVDIR = ./venv
-BINDIR = $(VENVDIR)/bin
-PYTHON = $(BINDIR)/python
-PIP = $(BINDIR)/pip
+HERE = $(shell pwd)
+VENV = $(HERE)/venv
+BIN = $(VENV)/bin
+PYTHON = $(BIN)/python
+PIP = $(BIN)/pip
 INSTALL = $(PIP) install
-MAKEFILE_LIST=Makefile
 SPHINX_BUILDDIR = docs/_build
+INSTALL_STAMP = $(VENV)/.install.stamp
 
 
 .PHONY: all build test run clean docs pypi testpypi pypi-register testpypi-register
+
 all:	build test
 
-build: $(VENVDIR)/COMPLETE
-$(VENVDIR)/COMPLETE: requirements.txt
+build: $(VENV)/COMPLETE
+$(VENV)/COMPLETE: requirements.txt
 	virtualenv --no-site-packages --python=`which python` \
-	    --distribute $(VENVDIR)
+	    --distribute $(VENV)
 	$(INSTALL) -r requirements.txt
 	$(PYTHON) setup.py develop
-	touch $(VENVDIR)/COMPLETE
+	touch $(VENV)/COMPLETE
+
 
 test:
 	$(INSTALL) -r test-requirements.txt
 	tox
 
 run:
-	$(BINDIR)/demo
+	$(BIN)/demo
 
 clean:
 	rm -rf venv  *egg*  dist  ./docs/_build  .tox
-	find . -name '*.pyc' -exec rm -f {} +
+	find . -name '*.pyc' -delete
+	find . -name '__pycache__' -type d -exec rm -fr {} \;
 
 docs:
-	$(VENVDIR)/bin/sphinx-build -b html -d $(SPHINX_BUILDDIR)/doctrees docs $(SPHINX_BUILDDIR)/html
+	$(VENV)/bin/sphinx-build -b html -d $(SPHINX_BUILDDIR)/doctrees docs $(SPHINX_BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(SPHINX_BUILDDIR)/html/index.html"
 

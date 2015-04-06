@@ -6,6 +6,8 @@ env:
     - TOX_ENV=py33
     - TOX_ENV=flake8
     - TOX_ENV=docs
+    global:
+        - secure: access_token=XXXXX
 install:
     - pip install coverage nose mock python-coveralls tox
 script:

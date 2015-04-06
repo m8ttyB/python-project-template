@@ -12,6 +12,7 @@ class DemoTestCase(unittest.TestCase):
 
     def test_some_bool(self):
         """Does this function actually return True?"""
+        print('access_token=XXXXX')
         self.assertTrue(d.some_bool())
 
     def test_do_nothing(self):
